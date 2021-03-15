@@ -5,6 +5,10 @@
 	import { exportImage } from './utils/export-img';
 
 	let jobTitle: string = "Senior React Engineer", jobLocation: string = "Glasgow", jobSalary: string = "60 - 65k", contactInformation: string = "someone@neogen.com"
+
+	let  additionalInformation: string = `
+		Tech lead experience required.
+	`
 </script>
 
 <main>
@@ -16,6 +20,7 @@
 				jobLocation={jobLocation}
 				jobSalary={jobSalary}
 				contactInformation={contactInformation}
+				additionalInformation={additionalInformation}
 			/>
 		</Container>
 	</div>
@@ -24,6 +29,7 @@
 		<input placeholder="Enter job location" bind:value={jobLocation} />
 		<input placeholder="Enter job salary" bind:value={jobSalary} />
 		<input placeholder="Enter contact information" bind:value={contactInformation} />
+		<textarea placeholder="Enter additional information" bind:value={additionalInformation} />
 		<button on:click={exportImage}>Export Image</button>
 	</div>
 </main>
