@@ -1,10 +1,11 @@
 <script lang="ts">
-    export let jobTitle: string, jobLocation: string, jobSalary: string
+    export let jobTitle: string, jobLocation: string, jobSalary: string, contactInformation: string
 </script>
 
 <div>
     <h1>{jobTitle}</h1>
-    <h2>{jobLocation ? `${jobLocation},` : ''} {jobSalary}</h2>
+    <h2>{jobLocation && `${jobLocation},`} {jobSalary}</h2>
+    <h3>{contactInformation && `Enquiries: ${contactInformation}`}</h3>
 </div>
 
 <style>
@@ -30,7 +31,7 @@
     div {
         position: absolute;
         width: 80%;
-        top: 150px;
+        top: 130px;
         left: 50%;
         transform: translateX(-55%);
     }
@@ -49,5 +50,11 @@
         color: #12E4E7;
         margin: 0;
         font-family: 'Zilla Slab';
+    }
+
+    h3 {
+        text-align: right;
+        color: #12E4E7;
+        margin-top: 25px;
     }
 </style>
