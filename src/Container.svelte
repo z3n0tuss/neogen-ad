@@ -10,10 +10,11 @@
 
 <style>
     .container-div {
-        background: url('img/bg.svg');
+        background: url('https://i.ibb.co/TvrNwfr/bg.png');
         height: 738px;
         width: 998px;
         position: relative;
+        background-size: cover;
     }
 
     .container-div > div {

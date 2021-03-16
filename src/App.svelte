@@ -14,7 +14,7 @@
 <main>
 	<div id="ad">
 		<Container>
-			<Banner imgUrl="build/img/neogen.png" />
+			<Banner imgUrl="https://i.ibb.co/kXYB4MX/neogen.png" />
 			<Text
 				jobTitle={jobTitle}
 				jobLocation={jobLocation}
