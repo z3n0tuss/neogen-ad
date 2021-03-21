@@ -5,9 +5,9 @@
 	import { exportImage } from './utils/export-img';
 
 	let jobTitle: string = "Senior React Engineer";
-	let jobLocation: string = "Glasgow";
+	let jobLocation: string = "Edinburgh - Fully Remote";
 	let jobSalary: string = "60 - 65k";
-	let contactInformation: string = "someone@neogen.com";
+	let contactInformation: string = "Sean@neogen-recruitment.co.uk";
 
 	let  additionalInformation: string = `
 		Azure deployments & automation. ARM and or Terraform.

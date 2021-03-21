@@ -14,7 +14,7 @@
         <div style="--font-size: {additionalInformationFontSize}" class="additional-information">
             {@html additionalInformation}          
         </div>
-        <div>
+        <div class="salary-location">
             <h2>{jobLocation && `${jobLocation},`} {jobSalary}</h2>
             <h3>{contactInformation && `Enquiries: ${contactInformation}`}</h3>
         </div>
@@ -63,7 +63,7 @@
 
     h2 {
         text-align: right;
-        font-size: 50px;
+        font-size: 40px;
         color: #12E4E7;
         margin: 0;
         font-family: 'Zilla Slab';
@@ -73,6 +73,11 @@
         text-align: right;
         color: #12E4E7;
         margin-top: 25px;
+        font-size: 15px;
+    }
+
+    .salary-location {
+        flex: 2;
     }
 
     .additional-information {
