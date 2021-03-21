@@ -1,11 +1,17 @@
 <script lang="ts">
-    export let jobTitle: string, jobLocation: string, jobSalary: string, contactInformation: string, additionalInformation: string
+    export let jobTitle: string;
+    export let jobLocation: string;
+    export let jobSalary: string;
+    export let contactInformation: string;
+    export let additionalInformation: string;
+
+    export let additionalInformationFontSize: string;
 </script>
 
 <main>
     <h1>{jobTitle}</h1>
     <section>
-        <div class="additional-information">
+        <div style="--font-size: {additionalInformationFontSize}" class="additional-information">
             {@html additionalInformation}          
         </div>
         <div>
@@ -75,7 +81,7 @@
         flex: 1;
         line-height: 40px;
         color: #FCB97D;
-        font-size: 30px;
+        font-size: var(--font-size);
         font-weight: bold;
     }
 </style>

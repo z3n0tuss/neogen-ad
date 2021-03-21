@@ -4,11 +4,16 @@
 	import Banner from './Banner.svelte'
 	import { exportImage } from './utils/export-img';
 
-	let jobTitle: string = "Senior React Engineer", jobLocation: string = "Glasgow", jobSalary: string = "60 - 65k", contactInformation: string = "someone@neogen.com"
+	let jobTitle: string = "Senior React Engineer";
+	let jobLocation: string = "Glasgow";
+	let jobSalary: string = "60 - 65k";
+	let contactInformation: string = "someone@neogen.com";
 
 	let  additionalInformation: string = `
-		Tech lead experience required.
+		Azure deployments & automation. ARM and or Terraform.
 	`
+
+	let additionalInformationFontSize: string = "20px"
 </script>
 
 <main>
@@ -21,6 +26,7 @@
 				jobSalary={jobSalary}
 				contactInformation={contactInformation}
 				additionalInformation={additionalInformation}
+				additionalInformationFontSize={additionalInformationFontSize}
 			/>
 		</Container>
 	</div>
@@ -30,6 +36,7 @@
 		<input placeholder="Enter job salary" bind:value={jobSalary} />
 		<input placeholder="Enter contact information" bind:value={contactInformation} />
 		<textarea placeholder="Enter additional information" bind:value={additionalInformation} />
+		<input placeholder="Additional Information Font Size" bind:value={additionalInformationFontSize} />
 		<button on:click={exportImage}>Export Image</button>
 	</div>
 </main>
